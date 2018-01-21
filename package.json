@@ -1,0 +1,31 @@
+{
+  "name": "feathers-findone",
+  "version": "1.0.0",
+  "description": "Adds a .findOne() method to services in Feathers.js",
+  "repository": "fridays/feathers-findone",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "standard",
+    "prepublishOnly": "npm run test",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "dev": "npm run test -- --watch"
+  },
+  "devDependencies": {
+    "@feathersjs/feathers": "^3.0.5",
+    "feathers-memory": "^2.1.0",
+    "jest": "^22.1.4",
+    "standard": "^10.0.3"
+  },
+  "author": "fridays",
+  "license": "MIT",
+  "keywords": [
+    "feathers",
+    "feathersjs",
+    "feathers-plugin",
+    "findOne"
+  ]
+}
