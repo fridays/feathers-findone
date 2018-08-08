@@ -17,6 +17,7 @@ const findOne = require('feathers-findone')
 
 app.configure(findOne())
 ```
+Please note that you must configure *findOne* **before** any services are registered. 
 
 ## Use
 
