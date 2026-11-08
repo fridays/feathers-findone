@@ -1,6 +1,6 @@
 {
   "name": "feathers-findone",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Adds a .findOne() method to services in Feathers.js",
   "repository": {
     "type": "git",
