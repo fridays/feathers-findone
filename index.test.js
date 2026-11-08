@@ -46,3 +46,17 @@ test('calls find with $limit: 1', async () => {
     { provider: 'rest', query: { text: 'a', $limit: 1 } }
   ])
 })
+
+test('does not mutate params', async () => {
+  const { service } = setup([])
+  const query = { text: 'a' }
+  const params = { provider: 'rest', query }
+  const withoutQuery = { provider: 'rest' }
+
+  await service.findOne(params)
+  await service.findOne(withoutQuery)
+
+  assert.equal(params.query, query)
+  assert.deepEqual(params, { provider: 'rest', query: { text: 'a' } })
+  assert.deepEqual(withoutQuery, { provider: 'rest' })
+})
