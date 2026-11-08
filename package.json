@@ -7,8 +7,10 @@
     "url": "git+https://github.com/fridays/feathers-findone.git"
   },
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "node --test",
